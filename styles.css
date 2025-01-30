@@ -1,0 +1,45 @@
+body{
+    background-color: #080016;
+}
+.heading{
+    display:flex;
+    justify-content: center;
+    height: 30%;
+    font-size: 2rem;
+    color:#FF1493	;
+    font-family: 'Bangers', cursive ;
+    /* color: #39FF14; */
+}
+.container{
+    display:grid;
+    grid-template-columns:150px 150px 150px ;
+    grid-template-rows: 150px 150px 150px;
+    gap:0;
+    margin:0;
+}
+
+.col{
+    border:1.5px solid #ff00ff;
+    display: flex;
+    justify-content: center;
+}
+.game-container{
+    display:flex;
+    justify-content: center;
+}
+.left{
+    border-left:0;
+}
+.top{
+    border-top:0;
+}
+.right{
+    border-right:0;
+}
+.down{
+    border-bottom:0;
+}
+img{
+    width: 100px;
+        
+}
