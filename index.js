@@ -11,6 +11,7 @@ $(".col img").click(function(){
     var row=this.dataset.row;
     var col=this.dataset.col;
     arr[row][col]="X";
+    n++;
     }
     else if(n%2===0 && !( $(this).hasClass("O") || $(this).hasClass("X") ) ){
         playmusic("./sounds/tap-notification-180637.mp3");
@@ -19,6 +20,7 @@ $(".col img").click(function(){
         var row=this.dataset.row;
         var col=this.dataset.col;
         arr[row][col]="O";
+        n++;
     }
     if(check(arr)){
         playmusic("./sounds/tadaa-47995.mp3");
@@ -31,7 +33,7 @@ $(".col img").click(function(){
         playmusic("./sounds/mixkit-negative-guitar-tone-2324.wav");
         reload();
     }
-    n++;
+    
 })
 function check(arr){
     return checkRows(arr)||checkColumns(arr)||checkDiagonals(arr);
